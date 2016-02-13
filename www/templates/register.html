@@ -12,17 +12,17 @@
     <!-- Signup form -->
     <div class="list list-inset">
       <label class="item item-input">
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" ng-model="vm.email">
       </label>
       <label class="item item-input">
-        <input type="text" placeholder="Your name">
+        <input type="text" placeholder="Your name" ng-model="vm.yourname">
       </label>
       <label class="item item-input">
-        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Password" ng-model="vm.password">
       </label>
     </div>
     <div class="padding">
-      <button class="button button-block button-energized" ui-sref="home">
+      <button class="button button-block button-energized" ui-sref="home" ng-click="vm.register();">
         Create account
       </button>
     </div>

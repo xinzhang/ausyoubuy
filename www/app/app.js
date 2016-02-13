@@ -95,7 +95,7 @@
   .state('register', {
     url: '/register',
     templateUrl: 'templates/register.html',
-    controller: 'AuthCtrl'
+    controller: 'AuthCtrl as vm'
   });
 
   // if none of the above states are matched, use this as the fallback
